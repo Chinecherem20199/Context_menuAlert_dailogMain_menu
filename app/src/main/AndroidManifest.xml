@@ -8,10 +8,22 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.MenusPickerExam.NoActionBar">
-        <activity android:name=".ContextMenu"></activity>
-        <activity android:name=".OrderActivity" />
-        <activity android:name=".MainActivity">
+        android:theme="@style/Theme.MenusPickerExam">
+        <activity android:name=".Status"></activity>
+        <activity android:name=".Tab" />
+        <activity android:name=".ContextMenu" />
+        <activity
+            android:name=".OrderActivity"
+            android:label="@string/order_activity"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/ice_food"
+            android:theme="@style/Theme.MenusPickerExam.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

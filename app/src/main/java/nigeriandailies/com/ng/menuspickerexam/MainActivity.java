@@ -53,7 +53,8 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
                 return true;
             case R.id.action_status:
-                displayToast(getString(R.string.action_status_message));
+                Intent intent2 = new Intent(MainActivity.this, Status.class);
+                startActivity(intent2);
                 return true;
             case R.id.action_favorites:
                 displayToast(getString(R.string.action_favorites_message));
